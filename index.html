@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Land of Sky P20 App Dev Wireframe</title>
+</head>
+
+<body>
+    <header>
+        <img class="scale-lock" src="images/image001.png">
+        <img src="images/image002.png">
+    </header>
+    <main>
+        <h1>Land of Sky P20 KPIs</h1>
+        <div class="dropdown">
+            <button id="all" class="dropbtn" onclick="displayAll(this)">All</button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown(this)">Year</button>
+            <div class="dropdown-content">
+                <option class="selection">2023</option>
+                <option class="selection">2024</option>
+                <option class="selection">2025</option>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown(this)">Strategic Direction</button>
+            <div class="dropdown-content">
+                <option class="selection">Early Education</option>
+                <option class="selection">K-12 Education</option>
+                <option class="selection">Postsecondary Education</option>
+                <option class="selection">Employee Credentials</option>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown(this)">County</button>
+            <div class="dropdown-content">
+                <option class="selection">Madison</option>
+                <option class="selection">Buncombe</option>
+                <option class="selection">Henderson</option>
+                <option class="selection">Transylvania</option>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDropdown(this)">Key Performance Indicator</button>
+            <div class="dropdown-content">
+                <option value="1" class="selection earlyed-kpi-1" onclick="displayGraph(this)">% of Children in Licensed Care</option>
+                <option value="2" class="selection earlyed-kpi"># of Licensed Sites Serving 0-5 Year Olds</option>
+                <option value="3" class="selection k12-kpi">% of Students Cross-Enrolled During K-12</option>
+                <option value="4" class="selection k12-kpi">% of Students Who Graduate with a Credential</option>
+                <option value="5" class="selection postsecondary-kpi"># of Students Enrolling Into College Courses</option>
+                <option value="6" class="selection postsecondary-kpi"># of Students Persisting Past the First Year of Postsecondary Education.
+                </option>
+                <option value="7" class="selection employeecred-kpi">Capacity of Available Training Programs</option>
+                <option value="8" class="selection employeecred-kpi"># of Graduates</option>
+            </div>
+        </div>
+        <div class="graph-container">
+            <figure class="graph"></figure>
+        </div>
+    </main>
+</body>
+
+</html>
